@@ -1,12 +1,122 @@
 .container{
     background-color: #000000;
-    margin: 120px;
-    padding: 20px 40px;
-    
+    margin: 10px 10px;
+    padding: 50px 2000px;
+    height: 1450px;
 }
 .row{
-    background-color: gray;
-    padding:20px 50px;
-    margin:20px 40px;
-    height: 1000px;
+    background-color:  #222222;
+    height: 1350px;
+    display: flex;
+   
 }
+.icon-holder{  
+    display: flex;
+
+}
+.icon-holder .icon-1{
+    color:white
+}
+.icon-holder .icon-2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.icon-holder .icon-3{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1,h2,h4{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: black;
+    
+}
+.paragraph{
+    color: rgb(136, 213, 136);
+}
+img{
+    border-radius: 5px;
+    max-width: 100%;
+    display: flex;
+    
+
+}
+.content2{
+    color: white;
+}
+.img-1{
+    color: white;
+}
+
+/*mobile screen size */
+@media screen and (min-width: 320px) {
+    .container{
+        background-color: #000000;
+        margin: 10px 10px;
+        padding: 50px 2000px;
+        height: 1450px;
+    }
+    .row{
+        background-color:  #222222;
+        height: 1350px;
+        display: flex;
+       
+    }
+    .icon-holder{  
+        display: flex;
+    
+    }
+    .icon-holder .icon-1{
+        color:white
+    }
+    .icon-holder .icon-2{
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .icon-holder .icon-3{
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    h1,h2,h4{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+        color: black;
+        
+    }
+    .paragraph{
+        color: rgb(136, 213, 136);
+    }
+    img{
+        border-radius: 5px;
+        max-width: 100%;
+        display: flex;
+        
+    
+    }
+}
+/*ipad screen size 
+@media screen and (min-width: 800px) {
+    img{
+      border-radius: 0px;
+      max-width: 85%;
+      height: auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    img{
+        border-radius: 0px;
+        max-width: 85%;
+        height: auto;   
+    }
+}
+/*laptop screen size */
