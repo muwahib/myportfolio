@@ -1,78 +1,59 @@
-.container{
+/*.container{
     background-color: #000000;
-    margin: 10px 10px;
-    padding: 50px 2000px;
-    height: 1450px;
+    
 }
 .row{
     background-color:  #222222;
-    height: 1350px;
-    display: flex;
-   
-}
-.icon-holder{  
-    display: flex;
-
 }
 .icon-holder .icon-1{
-    color:white
+    color:white;
 }
 .icon-holder .icon-2{
-    display: flex;
-    justify-content: center;
     color: white;
 }
 .icon-holder .icon-3{
     color: white;
-    display: flex;
-    justify-content: flex-end;
 }
 
 h1,h2,h4{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 p{
-    color: black;
-    
+    color: grey; 
 }
 .paragraph{
     color: rgb(136, 213, 136);
 }
-img{
-    border-radius: 5px;
-    max-width: 100%;
-    display: flex;
-    
+.services .icon{
+    color: white;
+}
 
-}
-.content2{
-    color: white;
-}
-.img-1{
-    color: white;
-}
+*/
 
 /*mobile screen size */
+/*
 @media screen and (min-width: 320px) {
     .container{
         background-color: #000000;
-        margin: 10px 10px;
+        margin: 10px 0px;
         padding: 50px 2000px;
-        height: 1450px;
+        height: 1600px;
     }
     .row{
         background-color:  #222222;
-        height: 1350px;
-        display: flex;
+        height: 1500px;
+        display: grid;
        
     }
     .icon-holder{  
         display: flex;
+        justify-content: space-between;
     
     }
     .icon-holder .icon-1{
-        color:white
+        color:white;
     }
     .icon-holder .icon-2{
         display: flex;
@@ -84,39 +65,107 @@ img{
         display: flex;
         justify-content: flex-end;
     }
-    
-    h1,h2,h4{
-        color: white;
+    svg.svg-inline--fa.fa-user {
+        padding: 5px 5px;
+    }
+    svg.svg-inline--fa.fa-phone {
+        padding: 5px 5px;
+    }
+    svg.svg-inline--fa.fa-pen-to-square {
+        padding: 5px 5px;
+    }
+    svg.svg-inline--fa.fa-briefcase {
+        padding: 5px 5px;
+    }
+    svg.svg-inline--fa.fa-glasses {
+        padding: 5px 5px;
+    }
+
+    .image-holder{
+        position: relative;
         font-family: Arial, Helvetica, sans-serif;
     }
-    p{
-        color: black;
-        
+    
+    .img-1 h1{
+        position: absolute;
+        bottom: 80px;
+        right: 17%;
     }
-    .paragraph{
-        color: rgb(136, 213, 136);
+    .img-1 h4{
+        position: absolute;
+        bottom: 50px;
+        color: green;
+        right: 40%;
     }
+    .cont{
+        position: absolute;
+        bottom: 20px;
+        right: 40%;
+    } 
     img{
         border-radius: 5px;
         max-width: 100%;
-        display: flex;
+        display: grid;
         
+    }
+   
+    .img-1{
+        color: white;
+        position: relative;
+    }
+
+    svg.svg-inline--fa.fa-square-facebook {
+        padding: 5px 5px;
+    }
+    svg.svg-inline--fa.fa-square-twitter {
+        padding: 5px 5px;
+    }
+    svg.svg-inline--fa.fa-linkedin {
+        padding: 5px 5px;
+    }
+    svg.svg-inline--fa.fa-behance {
+        padding: 5px 5px;
+    }
+    .h1,h2,h4{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    .about-me{
+        text-align: center;
+    }
+    .services{
+        text-align: center;
+        padding: 10px;
+    }
+    .services h4{
+        text-align: center;
+    }
+    .services .icon{
+        color: white;
+    }
+
+
     
-    }
 }
-/*ipad screen size 
+*/
+/*ipad screen size */
 @media screen and (min-width: 800px) {
-    img{
-      border-radius: 0px;
-      max-width: 85%;
-      height: auto;
+    .container{
+       background-color: black; 
+       display: grid;
+       justify-content: space-between;
     }
-}
-@media screen and (min-width: 1200px) {
-    img{
-        border-radius: 0px;
-        max-width: 85%;
-        height: auto;   
+    .image-holder{
+        max-width: 10px;
     }
+    .icon-holder{
+        color: white;
+    }
+
+
 }
 /*laptop screen size */
+@media screen and (min-width: 1200px) {
+    
+}
