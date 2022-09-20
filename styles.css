@@ -1,413 +1,258 @@
-:root{
-    --primary:#000000;
-    --secoundary: #222222;
+.holder{
+  background-color: #000000;
 }
-.container{
-    background: var(--primary);
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: auto 25% 70%;
+.row{
+    background-color: #222222;
 }
-
+li{
+  list-style-type: none;
+}
 
 body,p,ul,li{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
-body{
-    background: var(--primary);
-    overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-li{
-    list-style-type: none;
-}
-
-
 h1,h2,h4{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  color: white;
 }
 p{
-    color: grey; 
-}
-.paragraph{
-    color: rgb(136, 213, 136);
+  color: #c1c1c1;
 }
 
-/*mobile screen size */
-
-@media screen and (min-width: 320px) {
-    .container{
-        background-color: var(--primary);
-        height: fit-content;
-        width: 100%;
-    }
-   
-    .col-sm-3{  
-        display: flex;
-        justify-content: space-between;
-    
-    }
-    .col-sm-3 .icon-1{
-        color:white;
-    }
-    .col-sm-3 .icon-2{
-        display: flex;
-        justify-content: center;
-        color: white;
-    }
-    .col-sm-3 .icon-3{
-        color: white;
-        display: flex;
-        justify-content: flex-end;
-    }
-    svg.svg-inline--fa.fa-user {
-        padding: 5px 5px;
-    }
-    svg.svg-inline--fa.fa-phone {
-        padding: 5px 5px;
-    }
-    svg.svg-inline--fa.fa-pen-to-square {
-        padding: 5px 5px;
-    }
-    svg.svg-inline--fa.fa-briefcase {
-        padding: 5px 5px;
-    }
-    svg.svg-inline--fa.fa-glasses {
-        padding: 5px 5px;
-    }
-
-    .col-md-7{
-        position: relative;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .img-1 h1{
-        position: absolute;
-        bottom: 80px;
-        right: 17%;
-    }
-    .img-1 h4{
-        position: absolute;
-        bottom: 50px;
-        color: green;
-        right: 40%;
-    }
-    .cont{
-        position: absolute;
-        bottom: 20px;
-        right: 40%;
-    } 
-    img{
-        border-radius: 5px;
-        max-width: 100%;
-        display: flex;
-        
-    }
-   
-    .img-1{
-        color: white;
-        position: relative;
-    }
-
-    svg.svg-inline--fa.fa-square-facebook {
-        padding: 5px 5px;
-    }
-    svg.svg-inline--fa.fa-square-twitter {
-        padding: 5px 5px;
-    }
-    svg.svg-inline--fa.fa-linkedin {
-        padding: 5px 5px;
-    }
-    svg.svg-inline--fa.fa-behance {
-        padding: 5px 5px;
-    }
-    .h1,h2,h4{
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
-    }
-    .about-me{
-        text-align: center;
-    }
-    .services{
-        text-align: center;
-        padding: 10px;
-    }
-    .services h4{
-        text-align: left;
-    }
-    .services .icon{
-        color: white;
-    }
+/* normal screen */
 
 
-    
-}
-
-/*ipad screen size */
-
-@media screen and (min-width: 800px) {
-    .container{
-       background-color: black; 
-       display: grid;
-       justify-content: space-between;
-       grid-template-columns: 10% 25% 70%;
-       margin: 20px 20px;
-       padding: 50px 50px ;
-       gap: 80px;
-    }
-    .row1{
-        background-color: #222222;
-        display: grid;
-        justify-content: space-between;
-    }
-
-    .row2{
-        background-color: #222222;
-        display: grid;
-        justify-content: space-between;
-    }
-
-    .row3 {
-        background-color: #222222;
-        display: grid;
-        justify-content: space-between;
-    }
-
-    .icon-1{
-       border-color: green;
-       border-radius: 0px;
-       box-sizing: border-box;
-       display: grid;   
-    }
-
-    .icon-2{
-        display: grid;
-        justify-content: space-between;
-    }
-    .icon-3{
-        display: grid;
-        justify-content: space-between;
-    }
-    .col-sm-3{
-        color: white;
-        display: grid;
-        justify-content: space-between;
-        margin: 20px;
-        padding-bottom: 10px;
-    }
-    .col-sm-3 .icon1{
-        margin: 5px 5px;
-        padding: 20px 20px;
-        flex-direction: column;
-    }
-    .col-sm-3 .icon2{
-        
-        margin: 5px 5px;
-        padding: 20px 20px;
-    }
-    .col-sm-3 .icon3{
-        margin: 5px 5px;
-        padding: 20px 20px;
-    }
-    .col-md-7{
-        color: white;
-        max-width: 10px;
-        display: grid;
-        justify-content: space-between;
-    }
-    .col-xl-12 {
-        color: white;
-        width: 100%;
-        display: grid;
-        justify-content: space-between;
-    }
-    
-     
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        gap: 80px;
-    }
-    .services{
-        padding: 30px 20px;
-        text-align: left;
-        background: #202020;
-      }
-    .services h2{
-        text-align: rigth;
-      }
-    .services ul{
-        margin: 40px 0;
-      }
-    .services li{
-        padding: 0px;
-        background: #222222;
-        grid-column: span 4;
-        text-align: left;
-      }
-    .services img{
-        height: 60px;
-        margin: 10px auto;
-      }
-    img{
-        border-radius: 5px;
-        max-width: 170%;
-        display: grid;
-        justify-content: space-between;
-        position: relative;
-    }
-    .col-md-7 {
-        position: absolute;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .about-me{
-        margin: 25px 35px;
-        padding-left: 20px ;
-    }
-    #serv{
-        margin: 15px 14px;
-        padding-left: 20px ;
-    }
-    li{
-        list-style-type: none;
-    }
-}  
 
 
-/*laptop screen size */
-@media screen and (min-width: 1200px) {
-    .container{
-        background-color: black; 
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: 5% 30% 50%;
-        margin: 10px 10px 10px 10px;
-        padding: 50px 50px 50px 50px;
-        gap: 10px;
-     }
-     .row1{
-         background-color: #222222;
-         display: grid;
-         justify-content: space-between;
-        
-     }
-     .row2{
-         background-color: #222222;
-         display: grid;
-         justify-content: space-between;
-        
-     }
+/* mobile ipad screen */
+@media screen and (min-width: 620px){
+  img{
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+  }
+  .img-1{
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+  }
  
-     .row3 {
-         background-color: #222222;
-         display: grid;
-         justify-content: space-between;
-         display: grid;
-         justify-content: space-between;
-        
-     }
-     .icon-1{
-        border-color: green;
-        border-radius: 20px;
-        box-sizing: border-box;
-        display: flex;
-         
-     }
-     .icon-2{
-         display: grid;
-     }
-     .icon-3{
-         display: flex;
-     }
-     .col-sm-3{
-         color: white;
-         display: grid;
-         justify-content: space-between;
-         margin: 20px;
-         padding-bottom: 10px;
-     }
-     .col-sm-3 .icon1{
-         margin: 5px 5px;
-         padding: 20px 20px;
-         flex-direction: column;
-     }
-     .col-sm-3 .icon2{
-         
-         margin: 5px 5px;
-         padding: 20px 20px;
-     }
-     .col-sm-3 .icon3{
-         margin: 5px 5px;
-         padding: 20px 20px;
-     }
-     .col-md-7{
-         color: white;
-         max-width: 10px;
-         display: grid;
-         justify-content: space-between;
-     }
-     .col-xl-12 {
-         color: white;
-         width: 100%;
-         display: grid;
-         justify-content: space-between;
-     }
-     
+}
+
+/* ipad screen */
+@media screen and (min-width: 960px){
+  .col-sm-2{
+    display: grid;
+    justify-content: space-between;
+    flex-direction: column;
+   
+  }
+  .icon-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+   
+  
+  
+  /* icon-1 */
+  .icon-1{
+    color: white;
+   
+  }
+  /* icon-2 */
+  .icon-2{
+    color: white;
+    display: grid;
+    justify-content: space-between;
+  }
+  
+  
+  i.fa.fa-user {
+    padding: 5px 5px;
+  }
+  i.fa.fa-phone {
+    padding: 5px 5px;
+  }
+  i.fa.fa-pen-to-square {
+    padding: 5px 5px;
+  }
+  i.fa.fa-briefcase {
+    padding: 5px 5px;
+  }
+  i.fa.fa-glasses {
+    padding: 5px 5px;
+  }
+  /* icon-3 */
+  .icon-3{
+     display: grid;
+     justify-content: space-between;
+  }
+  
+  
+  /* col-lg-5 */
+  
+  .image-holder {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+   /* img-1 */
       
-     .grid{
-         display: grid;
-         grid-template-columns: repeat(8, 1fr);
-         gap: 80px;
-     }
-     .services{
-         padding: 30px 20px;
-         text-align: left;
-         background: #202020;
-       }
-     .services h2{
-         text-align: rigth;
-       }
-     .services ul{
-         margin: 40px 0;
-       }
-     .services li{
-         padding: 0px;
-         background: #222222;
-         grid-column: span 4;
-         text-align: left;
-       }
-     .services img{
-         height: 60px;
-         margin: 10px auto;
-       }
-     img{
-         border-radius: 5px;
-         max-width: 170%;
-         display: grid;
-         justify-content: space-between;
-         position: relative;
-     }
-     .col-md-7 {
-         position: absolute;
-         font-family: Arial, Helvetica, sans-serif;
-     }
-     
-     .about-me{
-         margin: 25px 35px;
-         padding-left: 20px ;
-     }
-     #serv{
-         margin: 15px 14px;
-         padding-left: 20px ;
-     }
-     li{
-         list-style-type: none;
-     }
+      #muam{
+        position: absolute;
+        top: 50%;
+        left: 525px;
+      }
+      #dev{
+        position: absolute;
+        top: 55%;
+        left: 650px;
+      }
+      img{
+        width: 100%;
+        position: relative;
+      }
+  
+   /* cont */
+      .cont{
+        color: white;
+        position: absolute;
+        top: 58%;
+        left: 665px;
+        
+      }
+  /* content holder */
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .content-holder{
+    padding: 10px 5px;
+  }
+  .services h3{
+    text-align: left;
+  }
+  .services ul{
+    margin: 10px 0;
+  }
+  .services li{
+    padding: 5px;
+    grid-column: span 2;
+    text-align: center; 
+  }
+}
+
+/* latop/computer screen */
+@media screen and (min-width: 1200px){
+  .col-sm-2{
+  display: grid;
+  justify-content: space-between;
+  flex-direction: column;
+ 
+}
+.icon-holder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+
+
+/* icon-1 */
+.icon-1{
+  color: white;
+ 
+}
+/* icon-2 */
+.icon-2{
+  color: white;
+  display: grid;
+  justify-content: space-between;
+}
+
+
+i.fa.fa-user {
+  padding: 5px 5px;
+}
+i.fa.fa-phone {
+  padding: 5px 5px;
+}
+i.fa.fa-pen-to-square {
+  padding: 5px 5px;
+}
+i.fa.fa-briefcase {
+  padding: 5px 5px;
+}
+i.fa.fa-glasses {
+  padding: 5px 5px;
+}
+/* icon-3 */
+.icon-3{
+   display: grid;
+   justify-content: space-between;
+}
+
+
+/* col-lg-5 */
+
+.image-holder {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+ /* img-1 */
+    
+    #muam{
+      position: absolute;
+      top: 50%;
+      left: 525px;
+    }
+    #dev{
+      position: absolute;
+      top: 55%;
+      left: 650px;
+    }
+    img{
+      width: 100%;
+      position: relative;
+    }
+
+ /* cont */
+    .cont{
+      color: white;
+      position: absolute;
+      top: 58%;
+      left: 665px;
+      
+    }
+/* content holder */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.content-holder{
+  padding: 10px 5px;
+}
+.services h3{
+  text-align: left;
+}
+.services ul{
+  margin: 10px 0;
+}
+.services li{
+  padding: 5px;
+  grid-column: span 2;
+  text-align: center; 
+}
+
 }
