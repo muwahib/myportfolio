@@ -1,13 +1,15 @@
 .holder{
   background-color: #000000;
+  max-width: 620px;
+  padding: 50px 0px;
 }
 .row{
     background-color: #222222;
+    
 }
 li{
   list-style-type: none;
 }
-
 body,p,ul,li{
   margin: 0;
   padding: 0;
@@ -15,34 +17,202 @@ body,p,ul,li{
 }
 h1,h2,h4{
   color: white;
+  font-size: 50px;
+  font-weight: 100px;
 }
 p{
   color: #c1c1c1;
 }
+.info{
+  color: #ffffff;
+}
+.icon-holder{
+  color: #ffffff;
+}
 
 /* normal screen */
 
+.icon-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+i.fa.fa-user {
+  padding: 2px 2px;
+}
+
+i.fa.fa-phone {
+  padding: 2px 2px;
+}
+
+i.fa.fa-pen-to-square {
+  padding: 2px 2px;
+}
+
+i.fa.fa-briefcase {
+  padding: 2px 2px;
+}
+
+i.fa.fa-glasses {
+  padding: 2px 2px;
+}
+
+.image-holder {
+  position: relative;
+  
+}
+
+.info{
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+  text-align: center;
+}
+.about-me{
+  text-align: center;
+}
+.services{
+  text-align: center;
+}
+.fa{
+  font-size: 25px;
+}
+.fa-brands{
+  font-size: 25px;
+}
 
 
 
 /* mobile ipad screen */
 @media screen and (min-width: 620px){
-  img{
-    width: 100%;
-    max-width: 960px;
-    height: auto;
-  }
-  .img-1{
-    width: 100%;
-    max-width: 960px;
-    height: auto;
-  }
+.holder{
+  background-color: #000000;
+  max-width: 960px;
+}
+.col-lg-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
  
+}
+.icon-holder{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* icon-1 */
+.icon-1{
+  color: white;
+ 
+}
+/* icon-2 */
+.icon-2{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+i.fa.fa-user {
+  padding: 5px 5px;
+}
+i.fa.fa-phone {
+  padding: 5px 5px;
+}
+i.fa.fa-pen-to-square {
+  padding: 5px 5px;
+}
+i.fa.fa-briefcase {
+  padding: 5px 5px;
+}
+i.fa.fa-glasses {
+  padding: 5px 5px;
+}
+/* icon-3 */
+.icon-3{
+   display: flex;
+   justify-content: space-between;
+}
+
+
+/* col-lg-5 */
+
+
+ /* img-1 */
+
+    img{
+      width: 100%;
+      position: relative;
+      height: 950px;
+    }
+    .image-holder {
+      position: relative;
+    }
+    
+    .info{
+      position: absolute;
+      bottom: 50px;
+      right: 40px;
+      text-align: center;
+    }
+
+ /* cont */
+    .cont{
+      color: white;
+    }
+/* content holder */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.content-holder{
+  padding: 10px 5px;
+}
+.services h3{
+  text-align: left;
+}
+.services ul{
+  margin: 10px 0;
+}
+.services li{
+  padding: 5px;
+  grid-column: span 2;
+  text-align: center; 
+}
+
 }
 
 /* ipad screen */
 @media screen and (min-width: 960px){
-  .col-sm-2{
+  .holder{
+    max-width: 1200px;
+    background-color: #000000;
+  }
+  .row{
+    background-color: #222222;
+  }
+  .col-lg-1{
     display: grid;
     justify-content: space-between;
     flex-direction: column;
@@ -54,8 +224,6 @@ p{
     align-items: center;
     justify-content: space-between;
   }
-   
-  
   
   /* icon-1 */
   .icon-1{
@@ -95,37 +263,17 @@ p{
   /* col-lg-5 */
   
   .image-holder {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    position: relative;
   }
-   /* img-1 */
-      
-      #muam{
-        position: absolute;
-        top: 50%;
-        left: 525px;
-      }
-      #dev{
-        position: absolute;
-        top: 55%;
-        left: 650px;
-      }
-      img{
-        width: 100%;
-        position: relative;
-      }
   
+  .info{
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    text-align: center;
+  }
    /* cont */
-      .cont{
-        color: white;
-        position: absolute;
-        top: 58%;
-        left: 665px;
-        
-      }
+      
   /* content holder */
   .grid{
     display: grid;
@@ -150,7 +298,11 @@ p{
 
 /* latop/computer screen */
 @media screen and (min-width: 1200px){
-  .col-sm-2{
+.holder{
+  background-color: #000000;
+  max-width: 3000px;
+}
+.col-lg-199999999999999999999999999{
   display: grid;
   justify-content: space-between;
   flex-direction: column;
@@ -162,8 +314,6 @@ p{
   align-items: center;
   justify-content: space-between;
 }
- 
-
 
 /* icon-1 */
 .icon-1{
@@ -173,7 +323,8 @@ p{
 /* icon-2 */
 .icon-2{
   color: white;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -203,43 +354,29 @@ i.fa.fa-glasses {
 /* col-lg-5 */
 
 .image-holder {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  position: relative;
 }
- /* img-1 */
-    
-    #muam{
-      position: absolute;
-      top: 50%;
-      left: 525px;
-    }
-    #dev{
-      position: absolute;
-      top: 55%;
-      left: 650px;
-    }
-    img{
-      width: 100%;
-      position: relative;
-    }
+
+.info{
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+  text-align: center;
+}
 
  /* cont */
-    .cont{
-      color: white;
-      position: absolute;
-      top: 58%;
-      left: 665px;
-      
-    }
+ 
+
 /* content holder */
 .grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
+#serv{
+  height: 65px;
+}
+
 .content-holder{
   padding: 10px 5px;
 }
@@ -248,11 +385,12 @@ i.fa.fa-glasses {
 }
 .services ul{
   margin: 10px 0;
+  height: 450px;
 }
 .services li{
   padding: 5px;
   grid-column: span 2;
-  text-align: center; 
+  text-align: center;
+  height: 250px; 
 }
-
 }
